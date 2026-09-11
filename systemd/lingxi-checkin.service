@@ -1,0 +1,10 @@
+[Unit]
+Description=Lingxi Daily Check-in (Playwright)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/lingxi-checkin
+ExecStart=/usr/local/bin/python3.10 %h/lingxi-checkin/lingxi_checkin.py
+StandardOutput=append:%h/lingxi-checkin/checkin.log
+StandardError=append:%h/lingxi-checkin/checkin.log

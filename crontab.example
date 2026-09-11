@@ -1,0 +1,5 @@
+# 灵犀任务中心每日自动签到 - cron 配置示例
+# 每天 08:00 执行；当天已签会自动跳过
+# 使用：crontab -e 后粘贴下面这一行（注意把路径改成你的实际目录）
+
+0 8 * * * cd /home/lingxi/workspace/lingxi-auto-checkin && /usr/bin/python3 lingxi_checkin.py >> checkin.log 2>&1

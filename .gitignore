@@ -1,0 +1,22 @@
+# 登录态（含敏感 cookie，绝对不能提交）
+cookies.json
+
+# 日志
+checkin.log
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 备份
+*.bak
+*.bak2
